@@ -7,3 +7,6 @@
 @media(max-width:400px){.site-shell{padding:0 18px}.brand-icon{display:none}.header-actions{gap:14px}nav{gap:16px}.hero .eyebrow{font-size:8px;letter-spacing:1px}.post-card{grid-template-columns:115px 1fr;gap:16px}.art-caption{left:13px}.art-caption b{font-size:21px}.art-number{left:13px;font-size:7px}.post-summary h3{font-size:23px}.post-summary .eyebrow{gap:6px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.site-header,.site-footer,.back-link,.article-end{display:none}.site-shell{padding:0}.article-wrap{max-width:none;margin:0}}
+
+/* Four-link navigation */
+@media(max-width:520px){.site-header{height:auto;min-height:108px;flex-wrap:wrap;padding:20px 0 16px;gap:12px}.header-actions{width:100%;justify-content:space-between}.header-actions nav{gap:24px}.brand-icon{display:block}}

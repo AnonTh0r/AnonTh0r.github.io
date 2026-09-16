@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>词书管理</title><link rel="stylesheet" href="assets/app.css"><meta name="theme-color" content="#f8f7f3"><link rel="icon" href="/images/maple.svg" type="image/svg+xml"><script src="/js/theme.js"></script><link rel="stylesheet" href="assets/maple.css"></head>
+<body><header class="maple-header"><a class="maple-brand" href="/"><img src="/images/maple.svg" alt=""><span>枫叶苑<small>LEMU3L’S JOURNAL</small></span></a><div class="maple-actions"><nav class="maple-nav" aria-label="主导航"><a href="/">首页</a><a href="/archives/">归档</a><a href="/vocab/" aria-current="page">背单词</a><a href="/about/">关于</a></nav><button class="theme-toggle" type="button" aria-label="切换深浅色模式" hidden><span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span></button></div></header><noscript><p class="maple-alert">背单词功能需要启用 JavaScript。启用后可导入词书和保存学习进度。</p></noscript><main class="container library"><header><h1>词书管理</h1><a href="index.html">返回模式首页</a></header>
+<section><h2>我的词书</h2><p>词书进度独立保存，生词本和学习日历由当前用户共享。</p><div id="bookList"></div></section>
+<section><h2>导入词书</h2><p>支持 UTF-8 CSV、TSV 和 JSON。单词、释义必填，其余字段可选。</p>
+<div class="library-actions"><button id="templateBtn" type="button">下载 CSV 模板</button><label>选择文件 <input id="bookFile" type="file" accept=".csv,.tsv,.json"></label></div>
+<div id="importForm" hidden><label>词书名称 <input id="bookName" maxlength="100"></label><label>导入方式 <select id="importTarget"><option value="">新建词书</option></select></label>
+<div class="library-fields" id="fieldMap"></div><button id="previewBtn" type="button">预览转换结果</button><div id="importPreview"></div><button id="importBtn" class="primary" type="button" disabled>确认导入</button></div></section>
+<section id="backup"><h2>备份与恢复</h2><p>备份包含本机全部用户的词书、进度和生词本。恢复会覆盖备份中同名的数据项。旧版内置词书的正文不包含在备份中，如需继续学习，请另行导入你持有的词书文件。</p><div class="library-actions"><button id="backupBtn" type="button">导出完整备份</button><label>恢复备份 <input id="backupFile" type="file" accept=".json"></label></div></section>
+<p id="libraryStatus" role="status" aria-live="polite"></p></main>
+<script src="assets/core.js"></script><script src="assets/enrichment.js"></script>
+<script src="assets/books.js"></script><script src="assets/learning.js"></script><script src="assets/library.js"></script><footer class="maple-footer">枫叶苑 · 词汇角 <span> / 每天一点，慢慢积累。</span><br>学习记录仅保存在当前浏览器，可在 <a href="books.html#backup">词书管理</a> 导出备份。</footer></body></html>

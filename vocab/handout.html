@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="maple-loading">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>词汇手册</title>
+<link rel="stylesheet" href="assets/app.css">
+<meta name="theme-color" content="#f8f7f3"><link rel="icon" href="/images/maple.svg" type="image/svg+xml"><script src="/js/theme.js"></script><link rel="stylesheet" href="assets/maple.css"><noscript><style>.maple-loading main{visibility:visible}</style></noscript></head>
+<body class="browse"><header class="maple-header"><a class="maple-brand" href="/"><img src="/images/maple.svg" alt=""><span>枫叶苑<small>LEMU3L’S JOURNAL</small></span></a><div class="maple-actions"><nav class="maple-nav" aria-label="主导航"><a href="/">首页</a><a href="/archives/">归档</a><a href="/vocab/" aria-current="page">背单词</a><a href="/about/">关于</a></nav><button class="theme-toggle" type="button" aria-label="切换深浅色模式" hidden><span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span></button></div></header><noscript><p class="maple-alert">背单词功能需要启用 JavaScript。启用后可导入词书和保存学习进度。</p></noscript>
+
+<a class="page-switch" href="index.html">🏠 选择练习模式</a>
+
+<nav class="browse-sidebar" id="chapterNav" aria-label="章节导航">
+  <h2>章节</h2><a href="books.html">📚 切换 / 管理词书</a>
+</nav>
+
+<main class="browse-main">
+  <h1 id="chapterTitle">加载中…</h1>
+  <p class="browse-meta" id="chapterMeta"></p>
+  <div class="card-grid" id="cardGrid"></div>
+</main>
+
+<div class="overlay" id="overlay">
+  <div class="overlay-content" id="overlayContent"></div>
+</div>
+
+<script src="assets/core.js"></script>
+<script src="assets/enrichment.js"></script>
+<script src="assets/books.js"></script><script src="assets/learning.js"></script>
+<script src="assets/public.js" data-entry="browse"></script>
+<footer class="maple-footer">枫叶苑 · 词汇角 <span> / 每天一点，慢慢积累。</span><br>学习记录仅保存在当前浏览器，可在 <a href="books.html#backup">词书管理</a> 导出备份。</footer></body>
+</html>

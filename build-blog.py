@@ -16,7 +16,7 @@ body = source.read_text(encoding='utf-8')
 leaf = '''<svg viewBox="0 0 80 80" fill="none" aria-hidden="true"><path d="M40 7 47 25 60 18 56 34 73 35 57 48 61 60 43 56 40 73 37 56 19 60 23 48 7 35 24 34 20 18 33 25Z" fill="currentColor"/><path d="M40 28V65M40 46 27 37M40 46 53 37" stroke="var(--paper)" stroke-width="1.5"/></svg>'''
 
 def shell(title, path, main, active='home'):
-    nav = ''.join(f'<a href="{url}"'+(' aria-current="page"' if active == key else '')+f'>{label}</a>' for key,url,label in [('home','/','首页'),('archives','/archives/','归档'),('about','/about/','关于')])
+    nav = ''.join(f'<a href="{url}"'+(' aria-current="page"' if active == key else '')+f'>{label}</a>' for key,url,label in [('home','/','首页'),('archives','/archives/','归档'),('vocab','/vocab/','背单词'),('about','/about/','关于')])
     return f'''<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)} · 枫叶苑</title><meta name="description" content="lemu3l 的个人博客。把经历写成文字，让想法慢慢生长。">
